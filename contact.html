@@ -21,17 +21,17 @@
 
   <section class="contact-page">
     <h2>Contact Us</h2>
-
-    <form class="contact-form">
+    <form class="contact-form" id="contactForm">
       <label>Name</label>
-      <input type="text" placeholder="Your name">
+      <input type="text" id="contactName" placeholder="Your name">
+      <p id="contactNameError" class="error"></p>
 
       <label>Email</label>
-      <input type="email" placeholder="Your email">
-
+      <input type="email" id="contactEmail" placeholder="Your email">
+      <p id="contactEmailError" class="error"></p>
       <label>Message</label>
-      <textarea placeholder="Your message"></textarea>
-
+        <textarea id="contactMessage" placeholder="Your message"></textarea>
+      <p id="contactMessageError" class="error"></p>
       <button type="submit">Send</button>
     </form>
   </section>
@@ -39,6 +39,6 @@
   <footer>
     <p>&copy; 2025 Formula 1 Portal</p>
   </footer>
-
+    <script src="script2.js"></script>
 </body>
 </html>
