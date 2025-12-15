@@ -1,84 +1,138 @@
 {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #f4f4f4;
+    }
+
+    .navbar {
+        background: #111;
+        color: white;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav li {
+        display: inline;
+        margin-left: 15px;
+    }
+
+    .nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .logo {
+        color: red;
+    }
+
+    .hero {
+        background: #222;
+        color: white;
+        padding: 60px;
+        text-align: center;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background: red;
+        color: white;
+        text-decoration: none;
+    }
+
+    .teams {
+        padding: 40px;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 15px;
+        width: 200px;
+    }
+
+
+    footer {
+        background: #111;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .card {
+        width: 200px;
+    }
+
+    .card img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .login-box {
+        width: 300px;
+        margin: 80px auto;
+        padding: 20px;
+        background: white;
+        border: 1px solid #ccc;
+    }
+
+    .login-box h2 {
+        text-align: center;
+    }
+
+    .login-box input {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+    }
+
+    .login-box button {
+        width: 100%;
+        padding: 8px;
+        background: red;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .teams-page {
+  padding: 20px;
+  text-align: center;
 }
 
-body {
-    background: #f4f4f4;
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
 }
 
-.navbar {
-    background: #111;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.team-card {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
 }
 
-.nav li {
-    display: inline;
-    margin-left: 15px;
+.team-card img {
+  width: 100px;
+  height: 60px;
+  object-fit: contain;
 }
 
-.nav a {
-    color: white;
-    text-decoration: none;
-}
-
-.logo {
-    color: red;
-}
-
-.hero {
-    background: #222;
-    color: white;
-    padding: 60px;
-    text-align: center;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: red;
-    color: white;
-    text-decoration: none;
-}
-
-.teams {
-    padding: 40px;
-    text-align: center;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    background: white;
-    padding: 15px;
-    width: 200px;
-}
-
-
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-.card {
-    width: 200px;
-}
-
-.card img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    display: block;
+.team-card p {
+  margin-top: 10px;
+  font-weight: bold;
 }
