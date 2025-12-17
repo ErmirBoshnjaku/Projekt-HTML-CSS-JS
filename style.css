@@ -22,7 +22,7 @@ body {
 }
 
 .navbar .logo {
-    margin-right: 20px; /* adds space between logo and buttons */
+    margin-right: 20px;
 }
 
 .nav li {
@@ -149,6 +149,25 @@ footer {
     margin-top: 12px;
     font-weight: bold;
 }
+
+.team-card {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-card img {
+    max-height: 120px;
+    width: auto;
+    object-fit: contain;
+}
+
+.team-card p {
+    margin-top: 15px;
+}
+
 
 .news-page {
     padding: 40px 20px;
